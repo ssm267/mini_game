@@ -1,0 +1,103 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #3d7e52, #255d48, #115b2b);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        
+        .hero {
+            text-align: center;
+            padding: 60px 20px 40px;
+        }
+
+        .hero h1 {
+            font-size: 5rem;
+            background: linear-gradient(135deg, #FFD966, #FFA559, #FF6B6B);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-shadow: 0 0 30px rgba(255,200,0,0.3);
+            letter-spacing: 5px;
+            font-weight: 900;
+        }
+
+        .hero p {
+            color: #c9b6ff;
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        
+        .games-container {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        
+        .game-card {
+            background: linear-gradient(145deg, #969c3b, #788d2f);
+            border-radius: 40px;
+            padding: 30px 25px;
+            width: 280px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            box-shadow: 0 25px 40px rgba(0,0,0,0.5);
+            border: 1px solid rgba(229, 255, 100, 0.3);
+        }
+
+        .game-card:hover {
+            transform: translateY(-15px) scale(1.03);
+            box-shadow: 0 35px 55px rgba(0,0,0,0.6);
+            border-color: #ffb347;
+        }
+
+       
+        .game-image {
+            width: 100%;
+            height: 180px;
+            background: rgba(0,0,0,0.3);
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 5rem;
+            margin-bottom: 20px;
+            transition: 0.3s;
+        }
+
+        .game-card:hover .game-image {
+            transform: scale(1.02);
+            background: rgba(0,0,0,0.5);
+        }
+
+        .game-card h2 {
+            color: #FFD966;
+            font-size: 1.9rem;
+            margin: 15px 0 8px;
+        }
+
+        .game-card p {
+            color: #b9adff;
+            font-size: 0.9rem;
+        }
+
+
+        @media (max-width: 650px) {
+            .hero h1 { font-size: 3rem; }
+            .game-card { width: 240px; padding: 20px; }
+            .game-image { height: 140px; font-size: 3.5rem; }
+        }
+  
